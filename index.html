@@ -1,106 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<title>Skyline Gate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords"
+    content="weight loss,home repair,contract,template,java,angular,test automation,consulting,software,pittsburgh,Skyline Gate,Job Talk,Weight Tracker Challenge">
+<meta name="Description" content="Skyline Gate is a software development and consulting company.">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Poppins", sans-serif
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+    .w3-half img:hover {
+        opacity: 1
+    }
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6677012-3"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-6677012-3');
+    gtag('config', 'UA-6677012-3');
 </script>
-    <title>SkylineGate</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Keywords" content="weight loss,home repair,contract,template,java,angular,test automation,consulting,software,pittsburgh,SkylineGate,Job Talk,Weight Tracker Challenge">
-    <meta name="Description" content="SkylineGate is a software development and consulting company.">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
 
-        /* Style the body */
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        /* Header/logo Title */
-        .header {
-            padding: 10px;
-            text-align: center;
-            background: #045444;
-            color: white;
-        }
-
-        /* Footer */
-        .footer {
-            padding: 5px;
-            text-align: left;
-            background: #045444;
-            color: white;
-        }
-
-        /* Column container */
-        .row {
-            display: -ms-flexbox; /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap; /* IE10 */
-            flex-wrap: wrap;
-        }
-
-        /* Create two unequal columns that sits next to each other */
-        /* Sidebar/left column */
-        .side {
-            -ms-flex: 30%; /* IE10 */
-            flex: 30%;
-            background-color: #f1f1f1;
-            padding: 20px;
-        }
-
-        /* Main column */
-        .main {
-            -ms-flex: 70%; /* IE10 */
-            flex: 70%;
-            background-color: white;
-            padding: 20px;
-        }
-
-    </style>
-</head>
 <body>
 
-<div class="header">
-    <h1>SkylineGate</h1>
-</div>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64"><b>Skyline Gate</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="#jobTalk" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">JobTalk</a>
+            <a href="#weight" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Weight Tracker
+                Challenge</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+        </div>
+    </nav>
 
-<div class="row">
-    <div class="side">
-        <h2>About Us</h2>
-        <h4>We are a software development and consulting company, located in Pittsburgh PA.</h4>
-        <p>We specialize in:</p>
-        <ul>
-            <li>Developing custom Java and Angular web application.</li>
-            <li>Consulting on test automation.</li>
-          </ul> 
-        <h2>Contact</h2>
-        <p><a href="mailto:ariel.skylinegate@gmail.com">Support</a></p>
-    </div>
-    <div class="main">
-        <h2>Job Talk (in Bata)</h2>
-        <p>Online home repair contracts collaboration tool.</p>
-        <p> <a target="_blank" href="https://jobtalkonline.com/home">  Open Job Talk </a></p>
-        <br>
-        <h2>Weight Tracker Challenge</h2>
-        <p>Android mobile application for losing weight.</p>
-        <p> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.skylinegate.weighttracker">  View on Google Play </a></p>
-    </div>
-</div>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+        <span>Skyline Gate</span>
+    </header>
 
-<div class="footer">
-    <h3>Copyright 2020 SkylineGate LLC</h3>
-</div>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Job Talk -->
+        <div class="w3-container" style="margin-top:80px" id="jobTalk">
+            <h1 class="w3-jumbo"><b>Products</b></h1>
+            <h1 class="w3-xxxlarge w3-text-red"><b>Job Talk (in Bata).</b></h1>
+            <hr style="width:50px;border:5px solid #045444" class="w3-round">
+            <p>Online home repair contracts collaboration tool.</p>
+            <p> <a target="_blank" href="https://jobtalkonline.com/home"> Open Job Talk </a></p>
+        </div>
+
+        <!-- Weight Tracker Challenge -->
+        <div class="w3-container" id="weight" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Weight Tracker Challenge.</b></h1>
+            <hr style="width:50px;border:5px solid #045444" class="w3-round">
+            <p>Android mobile application for losing weight.</p>
+            <p> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.skylinegate.weighttracker">
+                    View on Google Play </a></p>
+        </div>
+
+        <!-- Weight Tracker Challenge -->
+        <div class="w3-container" id="about" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>About.</b></h1>
+            <hr style="width:50px;border:5px solid #045444" class="w3-round">
+            <h4>We are a software development and consulting company, located in Pittsburgh PA.</h4>
+            <p>We specialize in:</p>
+            <ul>
+                <li>Developing custom Java and Angular web application.</li>
+                <li>Consulting on test automation.</li>
+            </ul>
+        </div>
+
+        <!-- Weight Tracker Challenge -->
+        <div class="w3-container" id="contact" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+            <hr style="width:50px;border:5px solid #045444" class="w3-round">
+            <p><a href="mailto:ariel.skylinegate@gmail.com">Support</a></p>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+        <p class="w3-right">Copyright 2020 SkylineGate LLC</p>
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+    </script>
 
 </body>
+
 </html>
